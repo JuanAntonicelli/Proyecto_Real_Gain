@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-size: 62.5%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
+    font-family: 'Bebas Neue', sans-serif;
+}
+header {
+    background-color: #2b2b2b;
+    padding: 1rem;
+    grid-row: 1;
+    grid-column: 1 / 13;
+}
+footer {
+    background-color: #2b2b2b;
+    grid-row: 12;
+    grid-column: 1 / 13;
+}
+.navbar__link {
+    max-width: 12rem;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.navbar__menu {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 2.4em;
+    color: white;
+    letter-spacing: 0.15rem;
+}
+.navbar__item {
+    padding: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+nav span {
+    transform: scale(1.3);
+    color: transparent;
+}
+.banner {
+    grid-column: 1 /13;
+    grid-row: 2 / 8;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    background-image: url(imgs/ESESTA.png);
+    background-size: cover;
+    height: 88vh;
+    }
+    .banner h1 {
+        grid-column: 2 / 6;
+        grid-row: 4 / 9;
+        transform: translateY(7rem);
+        color: white;
+        font-size: 7em;
+        letter-spacing: 0.3rem;
+        line-height: 1.15;
+        display: inline;
+    }   
+    .testimonios__container {
+        margin: 0;
+        display: grid;
+        gap: .5rem;
+        row-gap: .5rem;
+        grid-template-columns: repeat(24, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        width: 100vw;
+        height: 40vh;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        background-color: #2b2b2b;
+    }
+    .testimonios__card-1 {
+        background-color: crimson;
+        grid-row: 1 / 13;
+        grid-column: 3 / 12;
+    }
+    .testimonios__card-2 {
+        background-color: coral;
+        grid-row: 1 / 13;
+        grid-column: 14 / 23;
+    }
+    .footer__logo {
+        max-width: 7rem;
+    }
+    .footer__navbar {
+        padding: 1rem;
+    }
+    @media screen and (max-width:1200px) {
+        .navbar {
+            margin-left: 0;
+        }
+        .navbar__menu {
+            transform: translateX(10rem);
+        }
+        .banner h1 {
+            transform: translateY(-1.3rem);
+        }
+    
+    }
+    @media screen and (max-width:1024px) {
+        .navbar__menu {
+            transform: translateX(8rem);
+        }
+        .navbar__item {
+            margin-left: .5rem;
+            margin-right: .5rem;
+        }
+        .header {
+            align-items: center;
+        }
+        } 
+        .navbar__menu {
+            margin-left: 0;
+        }
+        .container__logo {
+            transform: translateX(3.5rem);
+        }
+    @media screen and (max-width:800px) {
+        .container__logo {
+            margin: 0 auto;
+            display: block;
+        }
+            .navbar {
+            margin-left: 0;
+        }
+            .navbar__menu {
+                display: flex;
+                justify-items: flex-start;
+            }
+        }
+        @media screen and (max-width:768px) {
+            body {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(12, auto);
+            }
+            .navbar {
+                align-items: center;
+                width: 89.7%;
+            }
+            .navbar__menu {
+                display: none;
+            }
+            .container__logo {
+                margin: 0 auto;
+            }
+            .banner {
+                max-height: 88vh;
+            }
+            .banner h1 {
+                grid-row: 5 / 8; 
+            }
+            footer {
+                grid-row: 12;
+            }
+        }
+        @media screen and (max-width:768px) {
+            .banner h1 {
+                font-size: 5em;
+            }
+        }
+        @media screen and (max-width:480px) {
+            .navbar__link {
+                transform: scale(0.95);
+            }
+            .banner h1 {
+                font-size: 4em;
+            }
+            body {
+                grid-template-columns: repeat(12, 1fr);
+                grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+        } }
