@@ -126,9 +126,9 @@ nav span {
         .navbar__menu {
             margin-left: 0;
         }
-        .container__logo {
+        /* .container__logo {
             transform: translateX(3.5rem);
-        }
+        } */
     @media screen and (max-width:800px) {
         .container__logo {
             margin: 0 auto;
@@ -174,8 +174,11 @@ nav span {
             }
         }
         @media screen and (max-width:480px) {
-            .navbar__link {
-                transform: scale(0.95);
+            .navbar {
+                margin: 0 auto;
+            }
+            .container__logo {
+                margin: 0 auto;
             }
             .banner h1 {
                 font-size: 4em;
